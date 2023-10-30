@@ -1,0 +1,177 @@
+@use "./variables" as v;
+@use "./mixin" as m;
+
+.title-section{
+  @include m.title-section;
+}
+.subtitle-section{
+  @include m.subtitle-section;
+}
+button{
+  @include m.format-button;
+}
+
+/* Sección 1 "INTRODUCTION" */
+.section1{
+  @include m.l-green;
+
+  .row{
+    width: 80%;
+    padding: 10vh 0;
+  }
+
+  img{
+    width: 90%;
+  }
+  
+  hr{
+    @include m.format-hr;
+  }
+  span{
+    font-weight: bold;
+    margin-right: 2vw;
+  }
+}
+
+/* Sección 2 "PHOTO GALLERY" */
+.section2{
+
+  .row{
+    width: 80%;
+    padding: 10vh 0;
+  }
+
+  img{
+    width: 100%;
+    aspect-ratio: 1/1;
+  }
+
+}
+
+/* Sección 3 "ABOUT THE BARBER SHOP" */
+.section3{
+  @include m.l-green;
+  background-image: url("../images/logo2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: clamp(250px, 20vw, 900px);
+
+  .row {
+    background-color: rgba(0, 0, 0, 0.141);
+    padding: 10vh 0;
+  }
+}
+
+/* Sección 4 "WE SPECIALIZE" */
+.section4{
+  .colPrimary{
+    height: 26vh;
+    .r-img1{
+      width: 40vh;
+      height: 28vh;
+    }
+  }
+
+  .colSecond{
+    .mark-text{
+      background-color: rgba(0, 0, 0, 0.849);
+      width: 460px;
+    }
+    .mark2-text{
+      background-color: transparent;
+      margin: 0.5vw;
+      padding: 1vw;
+      border: 1px solid white;
+      color:white
+    }
+    .mark-img2{
+      border: 1px solid black;
+      margin-left: 5vw;
+      width: 250px;
+
+      img {
+        width: 90%;
+        height: 95%;
+        object-fit: cover;
+      }
+    }
+  }
+
+}
+
+/* Sección 5 "LOOKING A BEAUTIFUL STYKE" */
+.section5{
+  @include m.l-green;
+
+  .row{
+    width: 80%;
+    padding: 10vh 0;
+  }
+
+  img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    object-position: center;
+  }
+  hr{
+    @include m.format-hr;
+  }
+}
+
+/* Sección 6 "OUR BARBERS" */
+.section6{
+  background-color: #d5d8d3;
+  padding: 5vw 0;
+
+  .row {
+    width: 80%;
+  }
+
+  .markImg{
+    background-color: white;
+  }
+
+  img{
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    object-position: center;
+  }
+
+}
+
+/* Sección 7 "TESTIMONIALS" */
+.section7{
+  background-image: url(../images/foto15.jpeg);
+  background-size: cover;
+  background-position: center;
+
+  .row {
+    padding: 2vh 0;
+    background-color: rgba(63, 49, 35, 0.444);
+  }
+
+  .mark-section7 {
+    width: clamp(315px, 90%, 716px);
+    text-align: center;
+    padding: 2vw;
+    border: 1px solid white;
+
+    .title-section7{
+      @include m.font-1;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    img{
+      width: 120px;
+      aspect-ratio: 1/1;
+    }
+  }
+
+  p{
+    color: white;
+
+  }
+}

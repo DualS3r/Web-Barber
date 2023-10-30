@@ -1,0 +1,105 @@
+@use "./variables" as v;
+
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Passion+One&display=swap');
+
+%color-brown{
+  color: v.$brown;
+ 
+}
+%color-white{
+  color: v.$white;
+}
+%f-offNav{
+  background-color: v.$f-offNav
+}
+
+%l-green{
+  background-color: v.$green;
+}
+
+%font-1{
+  font-family: "Merriweather", serif;
+}
+
+%font-2{
+  font-family: "Antonio", serif;
+}
+
+%font-3{
+  font-family: 'Passion One', cursive;
+}
+
+%title-section{
+  font-family: "Merriweather", serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+%subtitle-section{
+  color: v.$brown;
+  font-weight: bold;
+  font-family: "Merriweather", serif;
+  font-size: 1rem;
+}
+
+%format-button{
+    font-family: "Merriweather", serif;
+    color: v.$white;
+    font-weight: 500;
+    border: 0px;
+    padding: 0.5vh 0.5vw;
+    background-color: v.$brown;
+}
+
+%format-hr{
+  width: 20%;
+  opacity: 1;
+  border: 1px solid v.$brown;
+  color: v.$brown;
+}
+
+
+/* Mixin General */
+@mixin color-brown(){
+  @extend %color-brown;
+}
+
+@mixin color-white(){
+  @extend %color-white;
+}
+
+@mixin f-offNav(){
+  @extend %f-offNav;
+}
+
+@mixin l-green(){
+  @extend %l-green;
+}
+
+@mixin font-1(){
+  @extend %font-1;
+}
+
+@mixin font-2(){
+  @extend %font-2;
+}
+
+@mixin font-3(){
+  @extend %font-3;
+}
+
+@mixin format-button{
+  @extend %format-button;
+}
+
+@mixin title-section{
+  @extend %title-section;
+}
+
+@mixin subtitle-section{
+  @extend %subtitle-section;
+}
+
+@mixin format-hr{
+  @extend %format-hr;
+}

@@ -1,0 +1,222 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Passion+One&display=swap");
+.color-brown {
+  color: #ae7b5b;
+}
+
+.color-white, .section-header__title, .section-header__subtitle {
+  color: white;
+}
+
+.f-offNav {
+  background-color: #212529;
+}
+
+.section1, .section3, .section5 {
+  background-color: #f8fbf6;
+}
+
+.section7 .mark-section7 .title-section7, .section-header__title, .section-header__subtitle {
+  font-family: "Merriweather", serif;
+}
+
+.title-nav {
+  font-family: "Antonio", serif;
+}
+
+.title-section {
+  font-family: "Merriweather", serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.subtitle-section {
+  color: #ae7b5b;
+  font-weight: bold;
+  font-family: "Merriweather", serif;
+  font-size: 1rem;
+}
+
+button, .section-header button {
+  font-family: "Merriweather", serif;
+  color: white;
+  font-weight: 500;
+  border: 0px;
+  padding: 0.5vh 0.5vw;
+  background-color: #ae7b5b;
+}
+
+.section1 hr, .section5 hr {
+  width: 20%;
+  opacity: 1;
+  border: 1px solid #ae7b5b;
+  color: #ae7b5b;
+}
+
+/* Mixin General */
+/* General CSS */
+.title-nav {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.section-header {
+  background-image: url("../images/foto1.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.section-header img {
+  width: 10vw;
+}
+.section-header .row {
+  background-color: rgba(63, 49, 35, 0.444);
+  width: 100%;
+  height: 80vh;
+}
+.section-header__title {
+  font-weight: bold;
+  font-size: clamp(16px, 1.5rem, 32px);
+}
+.section-header__subtitle {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+/* Sección 1 "INTRODUCTION" */
+.section1 .row {
+  width: 80%;
+  padding: 10vh 0;
+}
+.section1 img {
+  width: 90%;
+}
+.section1 span {
+  font-weight: bold;
+  margin-right: 2vw;
+}
+
+/* Sección 2 "PHOTO GALLERY" */
+.section2 .row {
+  width: 80%;
+  padding: 10vh 0;
+}
+.section2 img {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+/* Sección 3 "ABOUT THE BARBER SHOP" */
+.section3 {
+  background-image: url("../images/logo2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: clamp(250px, 20vw, 900px);
+}
+.section3 .row {
+  background-color: rgba(0, 0, 0, 0.141);
+  padding: 10vh 0;
+}
+
+/* Sección 4 "WE SPECIALIZE" */
+.section4 .colPrimary {
+  height: 26vh;
+}
+.section4 .colPrimary .r-img1 {
+  width: 40vh;
+  height: 28vh;
+}
+.section4 .colSecond .mark-text {
+  background-color: rgba(0, 0, 0, 0.849);
+  width: 460px;
+}
+.section4 .colSecond .mark2-text {
+  background-color: transparent;
+  margin: 0.5vw;
+  padding: 1vw;
+  border: 1px solid white;
+  color: white;
+}
+.section4 .colSecond .mark-img2 {
+  border: 1px solid black;
+  margin-left: 5vw;
+  width: 250px;
+}
+.section4 .colSecond .mark-img2 img {
+  width: 90%;
+  height: 95%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Sección 5 "LOOKING A BEAUTIFUL STYKE" */
+.section5 .row {
+  width: 80%;
+  padding: 10vh 0;
+}
+.section5 img {
+  width: 100%;
+  height: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+/* Sección 6 "OUR BARBERS" */
+.section6 {
+  background-color: #d5d8d3;
+  padding: 5vw 0;
+}
+.section6 .row {
+  width: 80%;
+}
+.section6 .markImg {
+  background-color: white;
+}
+.section6 img {
+  width: 100%;
+  height: 30vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+/* Sección 7 "TESTIMONIALS" */
+.section7 {
+  background-image: url(../images/foto15.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+.section7 .row {
+  padding: 2vh 0;
+  background-color: rgba(63, 49, 35, 0.444);
+}
+.section7 .mark-section7 {
+  width: clamp(315px, 90%, 716px);
+  text-align: center;
+  padding: 2vw;
+  border: 1px solid white;
+}
+.section7 .mark-section7 .title-section7 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.section7 .mark-section7 img {
+  width: 120px;
+  aspect-ratio: 1/1;
+}
+.section7 p {
+  color: white;
+}
+
+.section-footer {
+  background-color: black;
+  height: 30vh;
+}
+.section-footer .logo {
+  width: 125px;
+}
+.section-footer .rrss {
+  width: 30px;
+  aspect-ratio: 1/1;
+  filter: invert(1);
+}/*# sourceMappingURL=style.css.map */

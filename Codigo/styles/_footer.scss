@@ -1,0 +1,19 @@
+@use "./variables" as v;
+@use "./mixin" as m;
+
+.section-footer{
+    background-color: black;
+    height: 30vh;
+
+    .logo{
+     width: 125px;   
+    }
+
+    .rrss{
+        width: 30px;
+        aspect-ratio: 1/1;
+        filter: invert(1);
+    }
+
+    
+}
